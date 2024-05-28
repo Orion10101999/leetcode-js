@@ -104,3 +104,53 @@
 
 ## Algorithm analysis :-
 
+- There are multiple ways to solve one problem 
+
+- Ex: There are multiple algorithms to sort a list of numbers .
+
+- How do we analyse which one of them is the most efficient algorithm ?
+
+- Generally , when we talk about performance , we use an absolute measure 
+
+- If I can run 100 meters in 12 seconds , I,m faster than someone who takes 15 seconds .
+
+## Algorithm analysis contd .
+
+- The absolute running time of an algorithm cannot be predicted , since it depends on a number of factors 
+
+- Programming language used to implement the algorithm 
+
+- The computer the program runs on 
+
+- others programs running at the same time 
+
+- Quality of the operating system 
+
+- We evalute the performance of an algorithm in terms of its input size 
+
+* Time Complexity :- Amount of time taken by an algorithm to run , as a function of input size 
+
+* Space Complexity :- amount of memory taken by an algorithm to run , as a function of input size .
+
+- By evaluating against the input size , the analysis is not only machine independent but the comparision is also more appropriate .
+
+- There is no one solution that works every single time . It is always good to known multiple ways to solve the problem and use the best solution  , given your constraints . 
+
+- If your app needs to be very quick and has plenty of memory to work with , you don't have to worry about space complexity .
+
+- If you have very little memory to work with , you should pick a solution that is relatively slower but needs less space
+
+## How to represent complezity ?
+
+- Asymptotic notations 
+
+- Mathmatical tools to represent time and space complexity .
+
+1. Big - O Notation (O - notation) - Worst case complexity 
+
+2. Omega Notation (omega - notation) - Best Case Complexity
+
+3. Theta Notation (theta - notation) - Avarage Case Complexity
+
+
+
