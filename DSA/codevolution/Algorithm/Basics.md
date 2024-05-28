@@ -140,7 +140,7 @@
 
 - If you have very little memory to work with , you should pick a solution that is relatively slower but needs less space
 
-## How to represent complezity ?
+## How to represent complexity ?
 
 - Asymptotic notations 
 
@@ -153,4 +153,200 @@
 3. Theta Notation (theta - notation) - Avarage Case Complexity
 
 
+## Big-O Notation :-
 
+- The worst case complexity 
+
+- Big O notation describes the complexity of an algorithm using algebraic terms 
+
+- It has two important characteristics :-
+
+    * It is expressed in terms of the input .
+
+    * It focus on the bigger picture without getting caught up in the minute details .
+
+## Big - O Time complexity :-
+
+```javascript
+
+function summation(n){
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += i
+    }
+    return sum;
+}
+
+```
+
+- Example :- 
+
+- summation(4) = 10
+
+- 1+2+3+4 = 10 
+
+- count the number of times a statement executes based on input size 
+
+
+function summation(n){ -------------------------------> n= 4
+    let sum = 0; -------------------------------------> 1
+    for (let i = 0; i < array.length; i++) {        
+        sum += i; ------------------------------------> 4
+    }
+    return sum; --------------------------------------> 1
+}
+
+
+n+2
+
+- It is expressed in terms of the input
+
+## Big - O Time complexity contd .
+
+- It focuses on the bigger picture without getting caught up in the minute details .
+
+-    n + 2   -->     n
+
+-   n = 100         100 + 2
+-   n = 1000        1000 + 2
+-   n = 10000       10000 + 2
+
+        .
+        .
+        .
+        .
+        .
+
+-   n = 100000000   100000000 + 2
+
+
+## Big - O Time Complexity :-
+
+```javascript
+
+function summation(n){
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += i
+    }
+    return sum;
+}
+
+```
+
+- Time Complexity => O(n) - Linear
+
+## Big - O Calculation :-
+
+
+```javascript
+
+function summation(n){
+    
+    return (n * (n + 1)) / 2;
+}
+
+```
+
+- Time Complexity => O(1) - Constant
+
+## Big - O Calculation contd.
+
+```javascript
+
+for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+        
+        }   
+}
+
+```
+
+- Time Complexity => O(n^2) - Quadratic
+
+- 3n^2 + 5n + 1
+
+```javaScript
+
+for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+        for (let k = 0; k < array.length; k++) {
+            
+            }
+    }
+}
+
+```
+
+- Time Complexity => O(n^3) - Cubic
+
+
+- Input size reduces by half every iteration 
+- Time Complexity => O(logn) - Logarithmic
+
+## Space Complexity :-
+
+- O(1) - Constant
+
+- O(n) - Linear
+
+- O(logn) - Logarithmic
+
+## Big O trend :-
+
+- Excellent --> O(1)
+
+- Good      --> O(log(n))
+
+- Fair      --> O(n)
+
+- Bad       --> O( n log n )
+
+- Horrible  --> O(n!) , O(2^n) , O(n^2)
+
+## Few points to note :-
+
+- Multiple algorithms exists for the same problem and there is no one right solution . Different algorithms work well under different constraints .
+
+- The same algorithm with the same programming language can be implemented in different ways .
+
+- When writting programs at work , don't lose sight of the big picture . Rather than writing clever code , write code that is simple to read and maintain .
+
+## Objects - Big - O
+
+- An object is a collection of key value pairs
+
+- Insert - O(1)
+- Remove - O(1)
+- Access - O(1)
+- Search - O(n)
+- Object.keys() - O(n)
+- Object.values() - O(n)
+- Object.entries() - O(n)
+
+```javascript
+
+const person = {
+    firstName : 'Bruce' ,
+    lastName : 'Wayne'
+}
+
+```
+
+## Array - Big - O
+
+- An array is an ordered collection of values .
+
+- Insert / Remove at end - O(1)
+- Insert / Remove at beginning - O(n)
+- Access - O(1)
+- Search - O(n)
+- Push / pop - O(n)
+- Shift / unshift / concat / slice / splice - O(n)
+- forEach / map / filter / reduce - O(n)
+
+```javascript
+
+const odd = [ 1 , 3 , 5 , 7 , 9 ]
+
+```
