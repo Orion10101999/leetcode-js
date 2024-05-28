@@ -1,11 +1,12 @@
-function fibonacci(n) {
-    let fib = [0, 1]
-    for (let i = 2; i < n; i++) {
-        fib.push(fib[i - 1] + fib[i - 2])
+function factorial(n) {
+    let fact = 1
+    for (let i = 2; i <= n; i++) {
+        fact = fact * i
     }
-    return fib
+    return fact
 }
 
-console.log(fibonacci(2));
-console.log(fibonacci(3));
-console.log(fibonacci(7));
+console.log(factorial(0));
+console.log(factorial(2));
+console.log(factorial(4));
+console.log(factorial(5));

@@ -65,3 +65,23 @@ console.log(fibonacci(7));
 - factorial(4) = 4*3*2*1 = 24
 - factorial(5) = 5*4*3*2*1 = 120
 
+```javascript
+
+function factorial(n) {
+    let fact = 1
+    for (let i = 2; i <= n; i++) {
+        fact = fact * i
+    }
+    return fact
+}
+
+console.log(factorial(0));
+console.log(factorial(2));
+console.log(factorial(4));
+console.log(factorial(5));
+
+```
+
+- Big - O --> O(n) 
+
+
