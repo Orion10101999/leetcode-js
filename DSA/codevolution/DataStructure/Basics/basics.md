@@ -310,7 +310,7 @@ for (const [key , value] of map) {
 
 - size() - get the number of elements in the queue 
 
-- print() - visualize the elements inthe queue 
+- print() - visualize the elements in the queue 
 
 
 ## Queue Implementation :-
@@ -447,5 +447,18 @@ console.log(queue.peek());
 
 
 ##  Circular Queue Implementation :-
+     
+- enqueue(element) - add an element to the queue
+        
+- dequeue() - remove the oldest element from the queue
 
+- isFull() - check if the queue is full
+
+- isEmpty() - check if the queue is empty 
+
+- peek() - get the value of the element at the front of the queue without removing it
+        
+- size() - get the number of elements in the queue 
+        
+- print() - visualize the elements in the queue 
 
