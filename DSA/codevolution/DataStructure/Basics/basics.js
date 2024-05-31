@@ -12,26 +12,25 @@ class Queue {
 
     dequeue(){
         const item = this.items[this.front]
-        
+        delete this.items[this.front]
+        this.front++
+        return item
     }
 
     isEmpty(){
-        return this.items.length === 0
+        return this.rear - this.front === 0
     }
 
     peek(){
-        if(!this.isEmpty()){
-            return this.items[0]
-        }
-        return null
+        return this.items[this.front]      
     }
     
     size(){
-        return this.items.length
+        return this.rear - this.front
     }
 
     print() {
-        console.log(this.items.toString());
+        console.log(this.items);
     }
 }
 

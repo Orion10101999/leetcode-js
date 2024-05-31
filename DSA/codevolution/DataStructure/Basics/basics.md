@@ -368,3 +368,84 @@ console.log(queue.peek());
 
 ## Queue Implementation Optimised :-
 
+```javaScript
+
+class Queue {
+    constructor(){
+        this.items = []
+        this.rear = 0
+        this.front = 0
+    }
+
+    enqueue(element){
+        this.items[this.rear] = element
+        this.rear++
+    }
+
+    dequeue(){
+        const item = this.items[this.front]
+        delete this.items[this.front]
+        this.front++
+        return item
+    }
+
+    isEmpty(){
+        return this.rear - this.front === 0
+    }
+
+    peek(){
+        return this.items[this.front]      
+    }
+    
+    size(){
+        return this.rear - this.front
+    }
+
+    print() {
+        console.log(this.items);
+    }
+}
+
+const queue = new Queue()
+console.log(queue.isEmpty());
+
+queue.enqueue(10)
+queue.enqueue(20)
+queue.enqueue(30)
+console.log(queue.size());
+queue.print()
+
+console.log(queue.dequeue());
+console.log(queue.peek());
+
+
+```
+
+## Circular Queue :-
+
+- The size of the queue is fixed and a single block of memory is used as if the first element is connected to the last element .
+
+- Also referred to as circular buffer or ring buffer and follows the FIFO principle .
+
+- A circular queue will reuse the empty block created during the dequeue operation .
+
+- when working with queues of fixed maximum size , a circular queue is a great implementation choice .
+
+- The circular Queue data structure supports two main operations .
+
+    * Enqueue , Which adds an element to the rear/tail of the collection 
+
+    * Dequeue , which removes an element from the front/head of the collection . 
+
+## Circular Queue Usage :-
+
+* Clock 
+
+* Streaming data
+
+* Traffic lights
+
+
+##  Circular Queue Implementation :-
+
+
