@@ -55,3 +55,6 @@ console.log('List size', list.getSize());
 
 ```
 
+##  Linked List Prepend :-
+
+
