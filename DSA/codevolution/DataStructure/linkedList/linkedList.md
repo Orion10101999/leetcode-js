@@ -16,16 +16,30 @@
 
     * Search :- to find an element given its value
 
+## Linked List :-
+
+..........     ..........      ..........
+| 10 | * |---->| 20 | * |----> | 30 | * |----> Null  
+..........     ..........      ..........
+
 ## Linked List Usages :-
 
 - All applications of both stacks and queues are applications of linked lists 
 
 - Image viewer
 
+
+## Linked List Node :-
+
+..........
+| 10 | * | ----> Null
+..........
+value  Next
+
 ##  Linked List Class :-
 
-```javaScript
 
+```javaScript
 
 class Node {
     constructor(value){
