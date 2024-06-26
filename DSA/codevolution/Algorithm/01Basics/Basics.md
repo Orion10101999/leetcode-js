@@ -188,12 +188,12 @@ function summation(n){
 - count the number of times a statement executes based on input size 
 
 
-function summation(n){ -------------------------------> n= 4
-    let sum = 0; -------------------------------------> 1
+function summation(n){-------------------------------> n= 4
+    let sum = 0; ------------------------------------> 1
     for (let i = 0; i < array.length; i++) {        
-        sum += i; ------------------------------------> 4
+        sum += i; -----------------------------------> 4
     }
-    return sum; --------------------------------------> 1
+    return sum; -------------------------------------> 1
 }
 
 
