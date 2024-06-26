@@ -1,21 +1,17 @@
-var canPlaceFlowers = function(flowerbed, n) {
-    let count = 0;
-    let pre = -1;
-    let next = 1;
-
-    for (let i = 0; i < flowerbed.length; i++, pre++, next++) {
-        if ((getValue(flowerbed, pre) + getValue(flowerbed, i) + getValue(flowerbed, next)) == 0) {
-            flowerbed[i] = 1;
-            count++;
-        }
+function mergeString(word1,word2){
+    
+    let result = '';
+     for (let i = 0; i < Math.max(word1.length, word2.length); i++) {
+       if (i < word1.length) result += word1[i];
+       if (i < word2.length) result += word2[i];
+     }
+     return result;
+     
     }
-
-    return count >= n;
-};
-
-var getValue = function(flowerbed, i) {
-    if (i < 0 || i >= flowerbed.length) {
-        return 0;
-    }
-    return flowerbed[i];
-}
+    
+    console.log(mergeString("abc","pqr"));
+    
+    console.log(mergeString("ab","pqrs"));
+    console.log(mergeString("abcd","pq"));
+    
+    
