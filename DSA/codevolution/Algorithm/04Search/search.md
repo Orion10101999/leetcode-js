@@ -5,7 +5,7 @@
 - Binary Search
 
 - Recursive binary search
-
+ 
 ## The Approach :-
 
 - Problem statement
@@ -30,7 +30,7 @@
 
 * t = 6 , should return 4
 
-* arr = [-5 , 2 ,10 , 4 , 6]
+*  arr = [-5 , 2 ,10 , 4 , 6]
 
 * t = 20 , should return -1
 

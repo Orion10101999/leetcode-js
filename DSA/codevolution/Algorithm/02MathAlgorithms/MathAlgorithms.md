@@ -45,7 +45,10 @@ console.log(fibonacci(7));
 
 - Big - O --> O(n) 
 
+
+
 ```css
+
 ## Big - O Guide 
 
 - Calculation not dependent on input size - O(1)
@@ -87,7 +90,11 @@ console.log(factorial(5));
 
 - Big - O --> O(n) 
 
+
+
+
 ```css
+
 ## Big - O Guide 
 
 - Calculation not dependent on input size - O(1)
@@ -108,11 +115,13 @@ console.log(factorial(5));
 - isPrime(5) = true (1*5 or 5*1)
 - isPrime(4) = false(1*4 or 2*2 or 4*1)
 
+
 ```JS
+
 function isPrime(n){
     if(n<2) return false
-    for (let i= 2; i<n; i++) {
-        if(n%i===0) {
+    for (let i = 2; i<n; i++) {
+        if(n%i === 0) {
             return false
         }
     }
@@ -128,7 +137,9 @@ console.log(isPrime(4));
 
 
 ```
+
 ```css
+
 ## Big - O Guide 
 
 - Calculation not dependent on input size - O(1)
@@ -283,7 +294,5 @@ console.log(isPowerOfTwoBitWise(5))    // false
 
 
 // Big-O - O(1)
-
-
 
 ```

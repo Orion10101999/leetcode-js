@@ -290,3 +290,91 @@ console.log(arr);
 
 ```
 
+
+```js
+
+function insertionSort(arr){
+    for (let i = 0; i < arr.length; i++) {
+        let numberToInsert = arr[i]
+        let j = i - 1
+        while(j>=0 && arr[j] > numberToInsert){
+            arr[j+1] = arr[j]
+            j = j-1
+        }
+        arr[j+1] = numberToInsert
+    }
+}
+
+const arr = [8 , 20 , -2 , 4 , -6]
+
+insertionSort(arr)
+
+console.log(arr);
+
+// Big-O = O(n^n)
+
+
+```
+
+
+## Quick sort :-
+
+* Problem :-
+
+* Given an array of integers , sort the array
+
+const arr = [-6 , 20 , 8 , -2 , 4]
+
+quickSort(arr) => Should return [-6 , -2 , 4 , 8 , 20]
+
+### Quick sort idea :-
+
+* Identify the pivot element inthe array 
+
+```css
+
+* Pick first element as pivot .
+
+* Pick last element as pivot (Our approach)
+
+* Pick a random element as pivot 
+
+* Pick median as pivot .
+
+```
+
+* Put everything that's smaller than the pivot into a `left` array and everything that's greater than the pivot into a `right` array .
+
+* Repeat the process for the individual `left` and `right` arrays till you have an array of length 1 which is sorted by defination
+
+* Repeatedly concatenate the left array , pivot and right arry till one sorted array remains .
+
+### Quick Sort Example :-
+
+```css
+
+        | -6 | 20 | 8 | -2 | 4 |
+
+    left          pivot          right
+
+| -6 | -2 |       | 4 |         | 8 | 20 |
+
+
+left   pivot  right       left pivot right
+
+| -6 | | -2 | |   |       |  8 | 20 |    |
+
+
+```
+----->
+
+```css
+
+    | -6 | -2 | 4 | 8 | 20 |
+                                                    ^
+                                                    |
+                                                    |
+                | 4 |                               |
+| -6 | -2 |                 | 8 | 20 |              
+
+```
