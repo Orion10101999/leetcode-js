@@ -1,69 +1,11 @@
-/*
-let name = 'sidhu'
+let data = "true"
+console.warn(typeof data,data);
 
-function getName() {
-    console.log(name);
-    let name = 'anil'
-}
+let trueBooleanData = !!data
+let falseBooleanData = !data
 
-getName()
+console.warn(typeof trueBooleanData, trueBooleanData);
+console.warn(typeof falseBooleanData, falseBooleanData);
 
-*/
-/*
-let name = 'sidhu'
 
-function getName() {
-    console.log(name);
-    var name = 'anil'
-}
 
-getName()
-
-*/
-/*
-
-let name = 'sidhu'
-
-function getName() {
-    console.log(name);
-    const name = 'anil'
-}
-
-getName()
-*/
-/*
-
-let name = 'sidhu'
-
-function getName() {
-    console.log(name);
-    name = 'anil'
-}
-
-getName()
-
-*/
-
-/*
-
-let name = 'sidhu'
-
-function getName() {
-    console.log(name);
-    name = 'anil'
-}
-
-getName()
-
-*/
-
-/*
-let name = 'sidhu'
-
-function getName() {
-    console.log(name);
-}
-
-getName()
-
-*/
