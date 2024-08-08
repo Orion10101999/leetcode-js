@@ -57,6 +57,7 @@ getName()
 
 */
 
+/*
 let name = 'sidhu'
 
 function getName() {
@@ -65,5 +66,4 @@ function getName() {
 
 getName()
 
-/*
 */
