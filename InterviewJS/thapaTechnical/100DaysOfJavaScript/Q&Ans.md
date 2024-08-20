@@ -1,10 +1,6 @@
-
-
-# Programming Questions :-
-
 # Q.1
 
-## Longest Word in a String :-
+## Programming Questions :- Longest Word in a String :-
 
 ### Q.1 Write a function FindLongestWord that takes a string as input and returns the longest words in the string . If there are multiple longest words , return the first encontered .
 
