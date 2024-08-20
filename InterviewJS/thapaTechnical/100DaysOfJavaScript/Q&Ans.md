@@ -121,3 +121,78 @@ console.log(generateHash("my name is thapa technical"))
 // o/p = "#MyNameIsThapaTechnical
 
 ```
+
+### Solution - 1 :-
+
+```js
+
+function generateHash(str) {
+    if(str.length > 280 || str === '') return false
+    let result = ''
+    for (let i = 0; i < str.length; i++) {
+        let element = str[i].toUpperCase()
+        if(str[i]!==' '){
+            if(str[i-1] !== " " && i !== 0){
+                element = str[i].toLowerCase()
+            }
+            result += element
+        }
+    }
+    return '#' + result
+
+}
+  
+console.log(generateHash("my name is thapa technical"))
+
+
+```
+### solution - 2
+
+
+```js
+
+function generateHash(str) {
+    if(str.length > 280 || str === '') return false
+    let arr = str.split(' ')
+    let newArr = arr.map(word => word.replace(word[0] , word[0].toUpperCase()));
+    return '#' + newArr.join('')
+  }
+  
+  
+console.log(generateHash("my name is thapa technical"))
+
+
+```
+
+```js
+function generateHash(str) {
+    if(str.length > 280 || str === '') return false
+    let arr = str.split(' ')
+    let newArr = arr.map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    return "#" + newArr.join('');
+  }
+  
+  
+  
+console.log(generateHash("my name is thapa technical"))
+
+
+```
+### Ans :-
+
+```css
+[Running] node "c:\leetcodeJs\InterviewJS\index.js"
+#MyNameIsThapaTechnical
+
+[Done] exited with code=0 in 0.403 seconds
+
+```
+
+# Q.3.
+
+## Interview Question : Count Occurrences of Character :-
+
+### Task :-
+
+
+
